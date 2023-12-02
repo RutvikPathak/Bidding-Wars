@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Bidding_WarsPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.LoginTable</class>
+    <class>models.DeliveryBoyTable</class>
+    <class>models.UserTable</class>
+    <class>models.RoleTable</class>
+    <class>Model.LoginTable</class>
+    <class>Model.RoleTable</class>
+    <class>Model.UserTable</class>
+    <class>Model.CategoryTable</class>
+    <class>Model.SubCategory</class>
+    <class>Model.ProductTable</class>
+    <class>Model.GraphicTable</class>
+    <class>Model.DeliveryBoyTable</class>
+    <class>model.DeliveryBoyTable</class>
+    <class>model.RoleTable</class>
+    <class>model.ProductTable</class>
+    <class>model.SubCategory</class>
+    <class>model.AdminTable</class>
+    <class>model.LoginTable</class>
+    <class>model.GraphicTable</class>
+    <class>model.UserTable</class>
+    <class>model.CategoryTable</class>
+    <class>Model.AdminTable</class>
+    <class>Model.AuctionTable</class>
+    <class>Model.AuctionParticipantTable</class>
+    <class>Model.AuctionWinnerTable</class>
+    <class>Model.FeedbackTable</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bidding_wars?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Root"/>
+    </properties>
+  </persistence-unit>
+</persistence>

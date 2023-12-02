@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bidding_wars?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">Root</property>
+    <mapping class="Model.RoleTable"></mapping>
+    <mapping class="Model.LoginTable"></mapping>
+    <mapping class="Model.UserTable"></mapping>
+    <mapping class="Model.CategoryTable"></mapping>
+    <mapping class="Model.SubCategory"></mapping>
+    <mapping class="Model.ProductTable"></mapping>
+    <mapping class="Model.GraphicTable"></mapping>
+    <mapping class="Model.DeliveryBoyTable"></mapping>
+    <mapping class="Model.AdminTable"></mapping>
+    <mapping class="Model.AuctionTable"></mapping>
+    <mapping class="Model.AuctionParticipantTable"></mapping>
+    <mapping class="Model.AuctionWinnerTable"></mapping>
+    <mapping class="Model.FeedbackTable"></mapping>
+  </session-factory>
+</hibernate-configuration>
